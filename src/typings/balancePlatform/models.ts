@@ -22,6 +22,7 @@ export * from './balanceAccountInfo';
 export * from './balanceAccountUpdateRequest';
 export * from './balancePlatform';
 export * from './balanceSweepConfigurationsResponse';
+export * from './bankAccount';
 export * from './brandVariantsRestriction';
 export * from './bulkAddress';
 export * from './capabilityProblem';
@@ -32,6 +33,7 @@ export * from './cardConfiguration';
 export * from './cardInfo';
 export * from './contactDetails';
 export * from './countriesRestriction';
+export * from './cronSweepSchedule';
 export * from './deliveryContact';
 export * from './differentCurrenciesRestriction';
 export * from './duration';
@@ -90,6 +92,7 @@ import { BalanceAccountInfo } from './balanceAccountInfo';
 import { BalanceAccountUpdateRequest } from './balanceAccountUpdateRequest';
 import { BalancePlatform } from './balancePlatform';
 import { BalanceSweepConfigurationsResponse } from './balanceSweepConfigurationsResponse';
+import { BankAccount } from './bankAccount';
 import { BrandVariantsRestriction } from './brandVariantsRestriction';
 import { BulkAddress } from './bulkAddress';
 import { CapabilityProblem } from './capabilityProblem';
@@ -100,6 +103,7 @@ import { CardConfiguration } from './cardConfiguration';
 import { CardInfo } from './cardInfo';
 import { ContactDetails } from './contactDetails';
 import { CountriesRestriction } from './countriesRestriction';
+import { CronSweepSchedule } from './cronSweepSchedule';
 import { DeliveryContact } from './deliveryContact';
 import { DifferentCurrenciesRestriction } from './differentCurrenciesRestriction';
 import { Duration } from './duration';
@@ -166,6 +170,7 @@ let enumsMap: {[index: string]: any} = {
         "CapabilityProblemEntityRecursive.TypeEnum": CapabilityProblemEntityRecursive.TypeEnum,
         "Card.FormFactorEnum": Card.FormFactorEnum,
         "CardInfo.FormFactorEnum": CardInfo.FormFactorEnum,
+        "CronSweepSchedule.TypeEnum": CronSweepSchedule.TypeEnum,
         "Duration.UnitEnum": Duration.UnitEnum,
         "EntryModesRestriction.ValueEnum": EntryModesRestriction.ValueEnum,
         "PaymentInstrument.StatusEnum": PaymentInstrument.StatusEnum,
@@ -209,6 +214,7 @@ let typeMap: {[index: string]: any} = {
     "BalanceAccountUpdateRequest": BalanceAccountUpdateRequest,
     "BalancePlatform": BalancePlatform,
     "BalanceSweepConfigurationsResponse": BalanceSweepConfigurationsResponse,
+    "BankAccount": BankAccount,
     "BrandVariantsRestriction": BrandVariantsRestriction,
     "BulkAddress": BulkAddress,
     "CapabilityProblem": CapabilityProblem,
@@ -219,6 +225,7 @@ let typeMap: {[index: string]: any} = {
     "CardInfo": CardInfo,
     "ContactDetails": ContactDetails,
     "CountriesRestriction": CountriesRestriction,
+    "CronSweepSchedule": CronSweepSchedule,
     "DeliveryContact": DeliveryContact,
     "DifferentCurrenciesRestriction": DifferentCurrenciesRestriction,
     "Duration": Duration,

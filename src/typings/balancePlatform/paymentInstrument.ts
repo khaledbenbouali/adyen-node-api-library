@@ -7,6 +7,7 @@
  * Do not edit this class manually.
  */
 
+import { BankAccount } from './bankAccount';
 import { Card } from './card';
 
 export class PaymentInstrument {
@@ -14,6 +15,7 @@ export class PaymentInstrument {
     * The unique identifier of the [balance account](https://docs.adyen.com/api-explorer/#/balanceplatform/v1/post/balanceAccounts__resParam_id) associated with the payment instrument.
     */
     'balanceAccountId': string;
+    'bankAccount'?: BankAccount;
     'card'?: Card;
     /**
     * Your description for the payment instrument, maximum 300 characters.
@@ -44,7 +46,7 @@ export class PaymentInstrument {
     */
     'statusReason'?: PaymentInstrument.StatusReasonEnum;
     /**
-    * Type of payment instrument.  Possible value: **card**. 
+    * Type of payment instrument.  Possible value: **card**, **bankAccount**. 
     */
     'type': PaymentInstrument.TypeEnum;
 
@@ -55,6 +57,11 @@ export class PaymentInstrument {
             "name": "balanceAccountId",
             "baseName": "balanceAccountId",
             "type": "string"
+        },
+        {
+            "name": "bankAccount",
+            "baseName": "bankAccount",
+            "type": "BankAccount"
         },
         {
             "name": "card",
@@ -125,6 +132,7 @@ export namespace PaymentInstrument {
         SuspectedFraud = <any> 'suspectedFraud'
     }
     export enum TypeEnum {
+        BankAccount = <any> 'bankAccount',
         Card = <any> 'card'
     }
 }

@@ -40,7 +40,7 @@ export class PaymentInstrumentInfo {
     */
     'statusReason'?: PaymentInstrumentInfo.StatusReasonEnum;
     /**
-    * Type of payment instrument.  Possible value: **card**. 
+    * Type of payment instrument.  Possible value: **card**, **bankAccount**. 
     */
     'type': PaymentInstrumentInfo.TypeEnum;
 
@@ -116,6 +116,7 @@ export namespace PaymentInstrumentInfo {
         SuspectedFraud = <any> 'suspectedFraud'
     }
     export enum TypeEnum {
+        BankAccount = <any> 'bankAccount',
         Card = <any> 'card'
     }
 }

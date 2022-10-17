@@ -29,7 +29,7 @@ export class AccountHolder {
     */
     'id': string;
     /**
-    * The unique identifier of the [legal entity](https://docs.adyen.com/api-explorer/#/balanceplatform/latest/post/legalEntities__resParam_id) associated with the account holder. Adyen performs a verification process against the legal entity of the account holder.  For more information on how to create a legal entity, refer to [Onboard and verify account holders](https://docs.adyen.com/issuing/kyc-verification).
+    * The unique identifier of the [legal entity](https://docs.adyen.com/api-explorer/#/balanceplatform/latest/post/legalEntities__resParam_id) associated with the account holder. Adyen performs a verification process against the legal entity of the account holder.  
     */
     'legalEntityId': string;
     /**
@@ -41,7 +41,7 @@ export class AccountHolder {
     */
     'reference'?: string;
     /**
-    * The status of the account holder.  Possible values:    * **Active**: The account holder is active. This is the default status when creating an account holder.    * **Suspended**: The account holder is temporarily suspended. You can set the account back to active or close it permanently.   * **Closed**: The account holder is permanently deactivated. This action cannot be undone.
+    * The status of the account holder.  Possible values:    * **Active**: The account holder is active. This is the default status when creating an account holder.    * **Inactive**: The account holder is temporarily inactive. You can set the account back to active or close it permanently.    * **Suspended**: The account holder is permanently suspended by Adyen. This action cannot be undone.   * **Closed**: The account holder is permanently deactivated. This action cannot be undone.
     */
     'status'?: AccountHolder.StatusEnum;
     /**
